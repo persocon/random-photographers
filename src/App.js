@@ -1,25 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { StateProvider } from './StateProvider'
+import List from './List';
+import Order from './Order';
+import Random from './Random';
 
-function App() {
+import {reducer} from './reducer';
+
+const App = () => {
+
+  const initialState = {
+    isRandom: false,
+    photographers: {
+      'Helmut Newton': 0,
+      'June Newton': 0,
+      'David Lynch': 0,
+      'Guy Bourdin': 0,
+      'Nobuyoshi Araki': 0,
+      'Daido Doriama': 0,
+      'Britany Markert': 0,
+      'Derek Woods': 0,
+      'Chase Lisbon': 0,
+      'Carla Sozzani': 0,
+    },
+    order: 'ASC',
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StateProvider initialState={initialState} reducer={reducer}>
+      <Random />
+      <Order />
+      <List />
+    </StateProvider>
   );
 }
 
