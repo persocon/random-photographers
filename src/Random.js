@@ -35,8 +35,7 @@ const Random = () => {
 
   return (
     <>
-      <p>machine: "{isRandom.toString()}"</p>
-      <button onClick={() => toggleRandom()}>Random vote machine</button>
+      <button onClick={() => toggleRandom()}>Random vote machine is "{isRandom ? 'ON' : 'OFF'}"</button>
     </>
   )
 }

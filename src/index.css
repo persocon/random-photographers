@@ -5,9 +5,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1b1c1e;
+  color: #FFF;
+}
+#root {
+  padding: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+button {
+  border: none;
+  background-color: #82aaff;
+  color: #1b1c1e;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 10px 8px;
+}
+
+.photographers p {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #022a4b;
+  color: #ffa7c4;
 }

@@ -27,6 +27,7 @@ const App = () => {
 
   return (
     <StateProvider initialState={initialState} reducer={reducer}>
+      <h1>My Favorite photographers</h1>
       <Random />
       <Order />
       <List />

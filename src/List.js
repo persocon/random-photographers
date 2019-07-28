@@ -7,7 +7,7 @@ const List = () => {
   const orderedPhotographers = setOrder(photographers, order)
   return Object.keys(orderedPhotographers).map((photographer) => {
     return (
-      <div key={photographer}>
+      <div key={photographer} className="photographers">
         <p key={photographer}>{photographer} - {orderedPhotographers[photographer]}</p>
         <button onClick={() => dispatch({
           type: 'upvote',
