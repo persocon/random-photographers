@@ -1,3 +1,5 @@
+# 🚨KINDA 🤷‍♀️ DEPRECATED 🚨
+
 # Random Photographers
 
 ## Install deps
